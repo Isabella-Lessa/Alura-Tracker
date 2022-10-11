@@ -13,9 +13,9 @@ export default defineComponent({
   name: "Cronometro",
   props: {
     tempoEmSegundos: {
-        type: Number,
-        default: 0
-    }
+      type: Number,
+      default: 0,
+    },
   },
   computed: {
     tempoDecorrido(): string {

@@ -8,29 +8,28 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from "vue";
 
 export default defineComponent({
-    name: 'Botao',
-    emits: ['clicado'],
-    props: {
-        desabilitado: {
-            type: Boolean
-        },
-        icone: {
-            type: String,
-            required: true
-        },
-        texto: {
-            type: String,
-            required: true
-        },
+  name: "Botao",
+  emits: ["clicado"],
+  props: {
+    desabilitado: {
+      type: Boolean,
     },
-    methods: {
-        clicado () : void {
-            this.$emit('clicado')
-        }
-    }
-})
-
+    icone: {
+      type: String,
+      required: true,
+    },
+    texto: {
+      type: String,
+      required: true,
+    },
+  },
+  methods: {
+    clicado(): void {
+      this.$emit("clicado");
+    },
+  },
+});
 </script>

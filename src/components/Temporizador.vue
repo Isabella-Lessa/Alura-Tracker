@@ -1,8 +1,18 @@
 <template>
   <div class="is-flex is-align-items-center is-justify-content-space-between">
     <Cronometro :tempoEmSegundos="tempoEmSegundos" />
-    <Botao @clicado="iniciar" icone="fas fa-play" texto='play' :desabilitado="cronometroRodando"/>
-    <Botao @clicado="finalizar" icone="fas fa-stop" texto='stop' :desabilitado="!cronometroRodando"/>
+    <Botao
+      @clicado="iniciar"
+      icone="fas fa-play"
+      texto="play"
+      :desabilitado="cronometroRodando"
+    />
+    <Botao
+      @clicado="finalizar"
+      icone="fas fa-stop"
+      texto="stop"
+      :desabilitado="!cronometroRodando"
+    />
   </div>
 </template>
 
@@ -16,8 +26,8 @@ export default defineComponent({
   emits: ["aoTemporizadorFinalizado"],
   components: {
     Cronometro,
-    Botao
-},
+    Botao,
+  },
   data() {
     return {
       tempoEmSegundos: 0,
@@ -41,4 +51,3 @@ export default defineComponent({
   },
 });
 </script>
-F
