@@ -22,7 +22,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Temporizador from "./Temporizador.vue";
+import Temporizador from "./TemporizadorItem.vue";
 
 export default defineComponent({
   name: "Formulário",

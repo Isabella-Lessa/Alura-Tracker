@@ -23,10 +23,10 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import BarraLateral from "./components/BarraLateral.vue";
-import Formulario from "./components/Formulario.vue";
-import Tarefa from "./components/Tarefa.vue";
+import Formulario from "./components/FormularioItem.vue";
+import Tarefa from "./components/TarefaItem.vue";
 import ITarefa from "./interfaces/ITarefa";
-import Box from "./components/Box.vue";
+import Box from "./components/BoxItem.vue";
 
 export default defineComponent({
   name: "App",
