@@ -1,13 +1,13 @@
 <template>
   <div class="is-flex is-align-items-center is-justify-content-space-between">
-    <Cronometro :tempoEmSegundos="tempoEmSegundos" />
-    <Botao
+    <CronometroItem :tempoEmSegundos="tempoEmSegundos" />
+    <BotaoItem
       @clicado="iniciar"
       icone="fas fa-play"
       texto="play"
       :desabilitado="cronometroRodando"
     />
-    <Botao
+    <BotaoItem
       @clicado="finalizar"
       icone="fas fa-stop"
       texto="stop"
@@ -18,15 +18,15 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Cronometro from "./CronometroItem.vue";
-import Botao from "./BotaoItem.vue";
+import CronometroItem from "./CronometroItem.vue";
+import BotaoItem from "./BotaoItem.vue";
 
 export default defineComponent({
-  name: "Temporizador",
+  name: "TemporizadorItem",
   emits: ["aoTemporizadorFinalizado"],
   components: {
-    Cronometro,
-    Botao,
+    CronometroItem,
+    BotaoItem,
   },
   data() {
     return {

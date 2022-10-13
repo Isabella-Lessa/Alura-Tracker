@@ -11,7 +11,7 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "Botao",
+  name: "BotaoItem",
   emits: ["clicado"],
   props: {
     desabilitado: {

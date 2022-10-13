@@ -14,7 +14,7 @@
         />
       </div>
       <div class="column">
-        <Temporizador @aoTemporizadorFinalizado="finalizarTarefa" />
+        <TemporizadorItem @aoTemporizadorFinalizado="finalizarTarefa" />
       </div>
     </div>
   </div>
@@ -22,13 +22,13 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Temporizador from "./TemporizadorItem.vue";
+import TemporizadorItem from "./TemporizadorItem.vue";
 
 export default defineComponent({
-  name: "Formulário",
+  name: "FormulárioItem",
   emits: ["aoSalvarTarefa"],
   components: {
-    Temporizador,
+    TemporizadorItem,
   },
   data() {
     return {
